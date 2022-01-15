@@ -4,12 +4,13 @@
     "license": "proprietary",
     "description": "",
     "require": {
-        "php": "^8.1.0",
+        "php": "^8.0.0",
         "ext-json": "*",
         "bear/dotenv": "^1.0",
-        "bear/package": "^1.12.1",
+        "bear/package": "^1.13",
         "bear/resource": "^1.16",
         "bear/sunday": "^1.5",
+        "my-vendor/weekday": "dev-master",
         "ray/aop": "^2.11",
         "ray/di": "^2.13"
     },
@@ -20,6 +21,10 @@
         "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-latest"
     },
+    "repositories":[{
+        "type": "vcs",
+        "url": "https://github.com/bearsunday/tutorial1.git"
+    }],
     "autoload": {
         "psr-4": {
             "MyVendor\\MyProject\\": "src/"
